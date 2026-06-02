@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — JahawiDevs | Web Design & Development Insights</title>
+  <meta name="description" content="Thoughts on web design, digital presence, and why Kenyan businesses need to take their online identity seriously." />
+  <meta property="og:title" content="Blog — JahawiDevs" />
+  <meta property="og:description" content="Thoughts on web design, digital presence, and building for the Kenyan market." />
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <meta name="theme-color" content="#c9a84c" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="blog.css" />
+</head>
+<body>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <nav id="nav" class="scrolled">
+    <a href="../index.html" class="nav-logo">Jahawi<span>Devs</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html#work">Work</a></li>
+      <li><a href="../index.html#services">Services</a></li>
+      <li><a href="../index.html#pricing">Pricing</a></li>
+      <li><a href="index.html" style="color:var(--gold)">Blog</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+    <a href="../index.html#contact" class="nav-cta">Hire Me</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav-mobile-menu" id="mobileMenu">
+    <button class="nav-mobile-close" id="mobileClose">✕</button>
+    <a href="../index.html#work" class="mobile-link">Work</a>
+    <a href="../index.html#services" class="mobile-link">Services</a>
+    <a href="../index.html#pricing" class="mobile-link">Pricing</a>
+    <a href="index.html" class="mobile-link">Blog</a>
+    <a href="../index.html#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <header class="blog-header">
+    <div class="blog-header-bg"></div>
+    <div class="blog-header-content">
+      <div class="section-label reveal" style="margin-bottom:32px"><span>Blog</span></div>
+      <h1 class="blog-header-title reveal">
+        Ideas on<br /><em>building</em><br /><span class="outline">the web.</span>
+      </h1>
+      <p class="blog-header-sub reveal">Thoughts on web design, digital presence, and the Kenyan market.</p>
+    </div>
+  </header>
+
+  <main class="blog-main">
+    <!-- Featured post -->
+    <a href="kenyan-businesses-website-2026.html" class="blog-featured reveal">
+      <div class="blog-featured-meta">
+        <span class="blog-tag">Business · Kenya</span>
+        <span class="blog-date">June 2026</span>
+        <span class="blog-read-time">8 min read</span>
+      </div>
+      <h2 class="blog-featured-title">Why Kenyan Businesses Need a<br /><em>Proper Website in 2026</em></h2>
+      <p class="blog-featured-excerpt">Your customers are searching online before they call. They're judging your professionalism before you've said a word. Here's why a real website — not a Facebook page, not an Instagram bio — is no longer optional.</p>
+      <span class="blog-read-link">Read Article →</span>
+    </a>
+
+    <!-- Post grid -->
+    <div class="blog-grid">
+      <!-- Placeholder cards — add more articles here -->
+      <a href="kenyan-businesses-website-2026.html" class="blog-card reveal">
+        <div class="blog-card-meta">
+          <span class="blog-tag">Business · Kenya</span>
+          <span class="blog-date">June 2026</span>
+        </div>
+        <h3 class="blog-card-title">Why Kenyan Businesses Need a Proper Website in 2026</h3>
+        <p class="blog-card-excerpt">Your customers are already searching. The question is whether they find you — or your competitor.</p>
+        <span class="blog-card-link">Read →</span>
+      </a>
+
+      <div class="blog-card blog-card-coming reveal">
+        <div class="blog-card-meta">
+          <span class="blog-tag">Design</span>
+        </div>
+        <h3 class="blog-card-title">Why Good Design Is Good Business</h3>
+        <p class="blog-card-excerpt">The ROI of investing in professional design — and what cheap design actually costs you.</p>
+        <span class="blog-card-coming-label">Coming Soon</span>
+      </div>
+
+      <div class="blog-card blog-card-coming reveal">
+        <div class="blog-card-meta">
+          <span class="blog-tag">Development</span>
+        </div>
+        <h3 class="blog-card-title">Custom Code vs Website Builders: What Kenyan Businesses Should Know</h3>
+        <p class="blog-card-excerpt">Wix, Squarespace, and WordPress have a place. But for serious businesses, here's when they fall short.</p>
+        <span class="blog-card-coming-label">Coming Soon</span>
+      </div>
+
+      <div class="blog-card blog-card-coming reveal">
+        <div class="blog-card-meta">
+          <span class="blog-tag">SEO</span>
+        </div>
+        <h3 class="blog-card-title">How to Get Your Nairobi Business Found on Google</h3>
+        <p class="blog-card-excerpt">Local SEO isn't complicated. Most businesses just don't do the basics. Here's the full checklist.</p>
+        <span class="blog-card-coming-label">Coming Soon</span>
+      </div>
+    </div>
+  </main>
+
+  <section class="blog-cta reveal">
+    <p class="blog-cta-eyebrow">Ready to start your project?</p>
+    <h2 class="blog-cta-heading">Let's build<br /><em>something great.</em></h2>
+    <a href="../index.html#contact" class="btn-primary">Get in Touch</a>
+  </section>
+
+  <footer>
+    <a href="../index.html" class="footer-logo">Jahawi<span>Devs</span></a>
+    <nav class="footer-nav">
+      <a href="../case-studies/divine-favour.html">Case Studies</a>
+      <a href="index.html">Blog</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <p class="footer-copy">© 2026 JahawiDevs. All rights reserved.</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

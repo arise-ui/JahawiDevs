@@ -1,0 +1,741 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ─── SEO ─── -->
+    <title>JahawiDevs — Web Design & Development in Kenya</title>
+    <meta
+      name="description"
+      content="JahawiDevs builds premium custom websites for Kenyan businesses, schools, and brands. Hand-coded, mobile-first, SEO-ready — no templates, no shortcuts."
+    />
+    <meta
+      name="keywords"
+      content="web design Kenya, web developer Nairobi, custom website Kenya, website design Nairobi, JahawiDevs"
+    />
+    <link rel="canonical" href="https://jahawidevs.web.app/" />
+
+    <!-- ─── OPEN GRAPH ─── -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jahawidevs.web.app/" />
+    <meta
+      property="og:title"
+      content="JahawiDevs — Premium Web Design & Development"
+    />
+    <meta
+      property="og:description"
+      content="Custom websites for businesses, schools, and brands in Kenya. Hand-coded, mobile-first, SEO-ready."
+    />
+    <meta
+      property="og:image"
+      content="https://jahawidevs.web.app/images/og-cover.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="JahawiDevs" />
+    <meta property="og:locale" content="en_KE" />
+
+    <!-- ─── TWITTER CARD ─── -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="JahawiDevs — Premium Web Design & Development"
+    />
+    <meta
+      name="twitter:description"
+      content="Custom websites for businesses, schools, and brands in Kenya."
+    />
+    <meta
+      name="twitter:image"
+      content="https://jahawidevs.web.app/images/og-cover.png"
+    />
+
+    <!-- ─── FAVICON ─── -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#c9a84c" />
+
+    <!-- ─── FONTS ─── -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- ─── STRUCTURED DATA ─── -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "JahawiDevs",
+        "description": "Premium web design and development for Kenyan businesses, schools, and brands.",
+        "url": "https://jahawidevs.web.app/",
+        "email": "vicohawi@gmail.com",
+        "telephone": "+254769694897",
+        "areaServed": "KE",
+        "serviceType": ["Web Design", "Web Development", "Brand Identity"],
+        "priceRange": "KES 15,000 – 65,000+"
+      }
+    </script>
+  </head>
+  <body>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- MOBILE NAV MENU -->
+    <div class="nav-mobile-menu" id="mobileMenu">
+      <button class="nav-mobile-close" id="mobileClose">✕</button>
+      <a href="#work" class="mobile-link">Work</a>
+      <a href="#services" class="mobile-link">Services</a>
+      <a href="#process" class="mobile-link">Process</a>
+      <a href="#pricing" class="mobile-link">Pricing</a>
+      <a href="blog/index.html" class="mobile-link">Blog</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+
+    <!-- NAV -->
+    <nav id="nav">
+      <a href="#" class="nav-logo">Jahawi<span>Devs</span></a>
+      <ul class="nav-links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="blog/index.html">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Hire Me</a>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-bg"></div>
+      <div class="hero-line"></div>
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <span>Web Designer & Developer</span>
+        </div>
+        <h1 class="hero-title">
+          Crafting<br />
+          <em>digital</em><br />
+          <span class="outline">presence.</span>
+        </h1>
+        <p class="hero-sub">
+          I build websites that convert visitors into clients —<br />
+          premium design, clean code, real results.
+        </p>
+        <div class="hero-actions">
+          <a href="#work" class="btn-primary">View My Work</a>
+          <a href="#contact" class="btn-ghost">Start a Project</a>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <div class="scroll-line"></div>
+        <span class="scroll-text">Scroll</span>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-wrap">
+      <div class="marquee-track">
+        <div class="marquee-item">
+          <span>Custom Websites</span><span class="marquee-dot"></span>
+        </div>
+        <div class="marquee-item">
+          <span>UI / UX Design</span><span class="marquee-dot"></span>
+        </div>
+        <div class="marquee-item">
+          <span>Brand Identity</span><span class="marquee-dot"></span>
+        </div>
+        <div class="marquee-item">
+          <span>Responsive Development</span><span class="marquee-dot"></span>
+        </div>
+        <div class="marquee-item">
+          <span>SEO Ready</span><span class="marquee-dot"></span>
+        </div>
+        <div class="marquee-item">
+          <span>Fast Delivery</span><span class="marquee-dot"></span>
+        </div>
+        <div class="marquee-item">
+          <span>Custom Websites</span><span class="marquee-dot"></span>
+        </div>
+        <div class="marquee-item">
+          <span>UI / UX Design</span><span class="marquee-dot"></span>
+        </div>
+        <div class="marquee-item">
+          <span>Brand Identity</span><span class="marquee-dot"></span>
+        </div>
+        <div class="marquee-item">
+          <span>Responsive Development</span><span class="marquee-dot"></span>
+        </div>
+        <div class="marquee-item">
+          <span>SEO Ready</span><span class="marquee-dot"></span>
+        </div>
+        <div class="marquee-item">
+          <span>Fast Delivery</span><span class="marquee-dot"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="section-label reveal"><span>About</span></div>
+      <div class="about-grid">
+        <div class="reveal">
+          <h2 class="about-heading">
+            Building the web,<br />
+            <em>one client</em><br />
+            at a time.
+          </h2>
+        </div>
+        <div class="about-body reveal">
+          <p>
+            I'm <strong>JahawiDevs</strong> — a web designer and developer who
+            builds premium digital experiences for businesses, schools, brands,
+            and creators who are serious about their online presence.
+          </p>
+          <p>
+            Every site I build is
+            <strong>custom-designed from scratch</strong> — no templates, no
+            shortcuts. Just clean code, intentional design, and results that
+            speak for themselves.
+          </p>
+          <p>
+            From <strong>hair products & wellness brands</strong> to
+            <strong>educational institutions</strong>,to even automobile
+            industries, I've helped clients across industries establish a
+            digital identity worth owning.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">Projects Delivered</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">3</span>
+              <span class="stat-label">Services Offered</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">100%</span>
+              <span class="stat-label">Custom Built</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">0</span>
+              <span class="stat-label">Templates Used</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <div class="section-label reveal"><span>Services</span></div>
+      <h2 class="services-heading reveal">
+        What I do<br />
+        <em>exceptionally</em> well.
+      </h2>
+      <div class="services-list">
+        <div class="service-item reveal">
+          <span class="service-num">01</span>
+          <span class="service-name">Custom Website Development</span>
+          <span class="service-desc"
+            >Hand-coded, responsive sites built from scratch. Fast, clean, and
+            tailored exactly to your brand — no page builders, no bloat.</span
+          >
+          <span class="service-arrow">↗</span>
+        </div>
+        <div class="service-item reveal">
+          <span class="service-num">02</span>
+          <span class="service-name">UI / UX Design</span>
+          <span class="service-desc"
+            >Interfaces that look premium and feel intuitive. Every layout,
+            colour, and interaction is intentional and user-tested.</span
+          >
+          <span class="service-arrow">↗</span>
+        </div>
+        <div class="service-item reveal">
+          <span class="service-num">03</span>
+          <span class="service-name">Brand Identity & Visual Design</span>
+          <span class="service-desc"
+            >Logos, colour systems, typography — a full visual language for your
+            brand that stays consistent across every touchpoint.</span
+          >
+          <span class="service-arrow">↗</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="work" id="work">
+      <div class="section-label reveal"><span>Selected Work</span></div>
+      <div class="work-header">
+        <h2 class="work-heading reveal">Built with <em>purpose</em>.</h2>
+        <p class="work-sub reveal">A selection of recent projects.</p>
+      </div>
+      <div class="projects-grid">
+        <article
+          class="project-card reveal"
+          onclick="window.location = 'case-studies/divine-favour.html'"
+        >
+          <div class="project-card-inner">
+            <div class="project-col-main">
+              <div class="project-tag">Education · Kenya</div>
+              <h3 class="project-title">Divine Favour<br />Junior Academy</h3>
+            </div>
+            <div class="project-col-desc">
+              <p class="project-desc">
+                Full institutional website for a Kenyan primary school. Built to
+                communicate trust to parents — admissions info, class listings,
+                and a visual identity that converts first impressions into
+                enrolments.
+              </p>
+            </div>
+            <div class="project-col-meta">
+              <div class="project-tags-row">
+                <span class="project-tech-tag">HTML/CSS</span>
+                <span class="project-tech-tag">SEO</span>
+                <span class="project-tech-tag">Mobile-first</span>
+              </div>
+              <a
+                href="https://divine-favour-junior-academy.web.app/"
+                target="_blank"
+                rel="noopener"
+                class="project-live-link"
+                onclick="event.stopPropagation()"
+                >divine-favour-junior-academy.web.app ↗</a
+              >
+            </div>
+            <div class="project-col-cta">
+              <span class="project-num">01</span>
+              <a
+                href="case-studies/divine-favour.html"
+                class="project-cs-btn"
+                onclick="event.stopPropagation()"
+                >Read Case Study →</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="project-card reveal"
+          onclick="window.location = 'case-studies/healthyflourish.html'"
+        >
+          <div class="project-card-inner">
+            <div class="project-col-main">
+              <div class="project-tag">
+                Hair Products & Wellness · E-commerce
+              </div>
+              <h3 class="project-title">Healthy<br />Flourish</h3>
+            </div>
+            <div class="project-col-desc">
+              <p class="project-desc">
+                Premium brand site for a hair products, mentorship & women
+                empowerment brand. Rich visual identity, strong typographic
+                hierarchy, and a product-forward layout built to convert
+                browsers into buyers.
+              </p>
+            </div>
+            <div class="project-col-meta">
+              <div class="project-tags-row">
+                <span class="project-tech-tag">HTML/CSS</span>
+                <span class="project-tech-tag">E-commerce</span>
+                <span class="project-tech-tag">Brand Identity</span>
+              </div>
+              <a
+                href="https://healthyflourish.web.app/"
+                target="_blank"
+                rel="noopener"
+                class="project-live-link"
+                onclick="event.stopPropagation()"
+                >healthyflourish.web.app ↗</a
+              >
+            </div>
+            <div class="project-col-cta">
+              <span class="project-num">02</span>
+              <a
+                href="case-studies/healthyflourish.html"
+                class="project-cs-btn"
+                onclick="event.stopPropagation()"
+                >Read Case Study →</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card project-cta reveal">
+          <div class="project-cta-inner">
+            <div class="project-cta-icon">+</div>
+            <p class="project-cta-text">Your project<br />could be next.</p>
+            <a href="#contact" class="project-cta-btn">Start a Conversation</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="process" id="process">
+      <div class="section-label reveal"><span>Process</span></div>
+      <h2 class="process-heading reveal">
+        How it<br />
+        <em>works</em>.
+      </h2>
+      <div class="process-steps">
+        <div class="process-step reveal">
+          <div class="step-num">01</div>
+          <div class="step-title">Discovery</div>
+          <p class="step-desc">
+            We talk through your goals, audience, and vision. I ask the right
+            questions so nothing gets lost in translation.
+          </p>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-num">02</div>
+          <div class="step-title">Design</div>
+          <p class="step-desc">
+            I craft a bespoke visual direction — layouts, colours, typography —
+            all aligned with your brand and approved before a single line of
+            code is written.
+          </p>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-num">03</div>
+          <div class="step-title">Build</div>
+          <p class="step-desc">
+            Clean, semantic HTML/CSS/JS. Fully responsive. Optimised for speed
+            and search engines out of the box.
+          </p>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-num">04</div>
+          <div class="step-title">Launch</div>
+          <p class="step-desc">
+            Your site goes live. I handle deployment and make sure everything is
+            polished, tested, and ready for the world to see.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials-section">
+      <div class="section-label reveal"><span>Testimonials</span></div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <p class="testimonial-quote">
+            "JahawiDevs understood exactly what we needed. The site exceeded
+            every expectation — professional, fast, and beautifully designed."
+          </p>
+          <div class="testimonial-divider"></div>
+          <p class="testimonial-author">School Director</p>
+          <p class="testimonial-role">Divine Favour Junior Academy</p>
+        </div>
+        <div class="testimonial-card reveal">
+          <p class="testimonial-quote">
+            "From the first conversation to launch day, everything was seamless.
+            Our brand finally has an online presence we're proud to share."
+          </p>
+          <div class="testimonial-divider"></div>
+          <p class="testimonial-author">CEO</p>
+          <p class="testimonial-role">HealthyFlourish</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="pricing" id="pricing">
+      <div class="section-label reveal"><span>Pricing</span></div>
+      <h2 class="pricing-heading reveal">Transparent<br /><em>pricing</em>.</h2>
+      <p class="pricing-sub reveal">
+        Every project is different — but here's where we start.
+      </p>
+      <div class="pricing-grid">
+        <div class="pricing-card reveal">
+          <div class="pricing-card-top">
+            <span class="pricing-tier">Starter</span>
+            <div class="pricing-amount">
+              <span class="pricing-currency">KES</span>
+              <span class="pricing-num">15,000</span>
+            </div>
+          </div>
+          <p class="pricing-desc">
+            Perfect for individuals and small businesses that need a clean,
+            professional online presence fast.
+          </p>
+          <ul class="pricing-features">
+            <li>Single-page website</li>
+            <li>Mobile responsive design</li>
+            <li>Basic on-page SEO</li>
+            <li>Contact section</li>
+            <li>1 round of revisions</li>
+          </ul>
+          <a href="#contact" class="pricing-cta">Get Started</a>
+        </div>
+
+        <div class="pricing-card pricing-card-featured reveal">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-card-top">
+            <span class="pricing-tier">Standard</span>
+            <div class="pricing-amount">
+              <span class="pricing-currency">KES</span>
+              <span class="pricing-num">35,000</span>
+            </div>
+          </div>
+          <p class="pricing-desc">
+            Multi-page custom website built to represent your brand properly and
+            convert visitors into clients.
+          </p>
+          <ul class="pricing-features">
+            <li>Up to 5 pages</li>
+            <li>Custom UI/UX design</li>
+            <li>Contact form integration</li>
+            <li>Domain & hosting setup</li>
+            <li>SEO optimised</li>
+            <li>2 rounds of revisions</li>
+          </ul>
+          <a href="#contact" class="pricing-cta pricing-cta-featured"
+            >Get Started</a
+          >
+        </div>
+
+        <div class="pricing-card reveal">
+          <div class="pricing-card-top">
+            <span class="pricing-tier">Premium</span>
+            <div class="pricing-amount">
+              <span class="pricing-currency">KES</span>
+              <span class="pricing-num">65,000</span>
+            </div>
+          </div>
+          <p class="pricing-desc">
+            Full brand identity plus a premium website — for businesses that
+            want to make a statement and scale.
+          </p>
+          <ul class="pricing-features">
+            <li>Brand identity design</li>
+            <li>Multi-page website</li>
+            <li>Scroll animations & interactions</li>
+            <li>E-commerce ready</li>
+            <li>Priority support (30 days)</li>
+            <li>Unlimited revisions</li>
+          </ul>
+          <a href="#contact" class="pricing-cta">Get Started</a>
+        </div>
+
+        <div class="pricing-card pricing-card-custom reveal">
+          <div class="pricing-card-top">
+            <span class="pricing-tier">Custom</span>
+            <div class="pricing-amount pricing-amount-custom">
+              <span class="pricing-num-custom">Let's Talk</span>
+            </div>
+          </div>
+          <p class="pricing-desc">
+            Schools, platforms, dashboards, complex builds — let's scope your
+            project and build a quote together.
+          </p>
+          <ul class="pricing-features">
+            <li>Scoped to your exact needs</li>
+            <li>Institutional & education sites</li>
+            <li>Web applications</li>
+            <li>Ongoing retainer available</li>
+          </ul>
+          <a href="#contact" class="pricing-cta">Get in Touch</a>
+        </div>
+      </div>
+      <p class="pricing-note reveal">
+        All prices are starting points. Final quotes depend on scope,
+        complexity, and timeline. <a href="#contact">Let's talk</a> about your
+        project.
+      </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="section-label reveal" style="justify-content: center">
+        <span>Contact</span>
+      </div>
+      <h2 class="contact-heading reveal">
+        Let's build<br />
+        <em>something</em><br />
+        <span class="outline">great.</span>
+      </h2>
+      <p class="contact-sub reveal">
+        Have a project in mind? Tell me about it below.
+      </p>
+
+      <!-- ─── CONTACT FORM ─── -->
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Jane Mwangi"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="jane@yourbrand.com"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="projectType">Project Type</label>
+            <select id="projectType" name="projectType" required>
+              <option value="" disabled selected>Select a project type</option>
+              <option value="new-website">New Website</option>
+              <option value="redesign">Website Redesign</option>
+              <option value="ecommerce">E-commerce Store</option>
+              <option value="school">School / Institution Site</option>
+              <option value="brand-identity">Brand Identity</option>
+              <option value="other">Other / Not sure yet</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="budget">Budget Range</label>
+            <select id="budget" name="budget" required>
+              <option value="" disabled selected>Select your budget</option>
+              <option value="starter">KES 10,000 – 20,000 (Starter)</option>
+              <option value="standard">KES 20,000 – 50,000 (Standard)</option>
+              <option value="premium">KES 50,000 – 100,000 (Premium)</option>
+              <option value="custom">KES 100,000+ (Custom / Enterprise)</option>
+              <option value="discuss">I'd rather discuss</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="timeline">Timeline</label>
+            <select id="timeline" name="timeline">
+              <option value="" disabled selected>When do you need it?</option>
+              <option value="asap">As soon as possible</option>
+              <option value="2weeks">Within 2 weeks</option>
+              <option value="1month">Within a month</option>
+              <option value="flexible">I'm flexible</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="phone"
+              >Phone / WhatsApp
+              <span class="form-optional">(optional)</span></label
+            >
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+254 7XX XXX XXX"
+            />
+          </div>
+        </div>
+
+        <div class="form-group form-group-full">
+          <label for="message">Tell me about your project</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="What does your business do? Who are your customers? Do you have an existing brand or are you starting fresh?"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="form-submit" id="formSubmit">
+          <span class="submit-text">Send Message</span>
+          <span class="submit-arrow">↗</span>
+        </button>
+
+        <div class="form-success" id="formSuccess">
+          <span class="success-icon">✓</span>
+          <p>Message sent — I'll be in touch within 24 hours.</p>
+        </div>
+      </form>
+
+      <div class="contact-divider reveal">
+        <span>or reach me directly</span>
+      </div>
+
+      <a href="mailto:vicohawi@gmail.com" class="contact-email reveal"
+        >vicohawi@gmail.com</a
+      >
+      <div class="contact-methods reveal">
+        <a href="tel:+254769694897" class="contact-method">
+          <span class="contact-method-label">Phone / WhatsApp</span>
+          <span class="contact-method-value">+254 769 694 897</span>
+        </a>
+        <a href="mailto:vicohawi@gmail.com" class="contact-method">
+          <span class="contact-method-label">Email</span>
+          <span class="contact-method-value">vicohawi@gmail.com</span>
+        </a>
+      </div>
+      <div class="contact-links reveal">
+        <a
+          href="https://github.com/arise-ui"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-link"
+        >
+          GitHub
+        </a>
+
+        <a
+          href="https://x.com/JahawiDevs"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-link"
+        >
+          Twitter / X
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/victor-jahawi-5337a23a9/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-link"
+        >
+          LinkedIn
+        </a>
+
+        <a
+          href="https://wa.me/254769694897"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-link"
+        >
+          WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <a href="#" class="footer-logo">Jahawi<span>Devs</span></a>
+      <nav class="footer-nav">
+        <a href="case-studies/divine-favour.html">Case Studies</a>
+        <a href="blog/index.html">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer-copy">© 2026 JahawiDevs. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

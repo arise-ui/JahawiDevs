@@ -1,0 +1,12 @@
+{
+  "name": "JahawiDevs",
+  "short_name": "JahawiDevs",
+  "description": "Premium web design and development for Kenyan businesses.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080808",
+  "theme_color": "#c9a84c",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
