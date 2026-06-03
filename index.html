@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- ─── SEO ─── -->
     <title>JahawiDevs — Web Design & Development in Kenya</title>
     <meta
       name="description"
@@ -15,8 +13,6 @@
       content="web design Kenya, web developer Nairobi, custom website Kenya, website design Nairobi, JahawiDevs"
     />
     <link rel="canonical" href="https://jahawidevs.web.app/" />
-
-    <!-- ─── OPEN GRAPH ─── -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://jahawidevs.web.app/" />
     <meta
@@ -25,18 +21,14 @@
     />
     <meta
       property="og:description"
-      content="Custom websites for businesses, schools, and brands in Kenya. Hand-coded, mobile-first, SEO-ready."
+      content="Custom websites for businesses, schools, and brands in Kenya."
     />
     <meta
       property="og:image"
       content="https://jahawidevs.web.app/images/og-cover.png"
     />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
     <meta property="og:site_name" content="JahawiDevs" />
     <meta property="og:locale" content="en_KE" />
-
-    <!-- ─── TWITTER CARD ─── -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
@@ -50,15 +42,11 @@
       name="twitter:image"
       content="https://jahawidevs.web.app/images/og-cover.png"
     />
-
-    <!-- ─── FAVICON ─── -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link rel="manifest" href="site.webmanifest" />
     <meta name="theme-color" content="#c9a84c" />
-
-    <!-- ─── FONTS ─── -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -66,32 +54,22 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-
-    <!-- ─── STRUCTURED DATA ─── -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "JahawiDevs",
-        "description": "Premium web design and development for Kenyan businesses, schools, and brands.",
-        "url": "https://jahawidevs.web.app/",
-        "email": "vicohawi@gmail.com",
-        "telephone": "+254769694897",
-        "areaServed": "KE",
-        "serviceType": ["Web Design", "Web Development", "Brand Identity"],
-        "priceRange": "KES 15,000 – 65,000+"
-      }
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+      emailjs.init("YOUR_EMAILJS_PUBLIC_KEY");
     </script>
   </head>
   <body>
     <div class="cursor" id="cursor"></div>
     <div class="cursor-ring" id="cursorRing"></div>
 
-    <!-- MOBILE NAV MENU -->
+    <!-- MOBILE NAV -->
     <div class="nav-mobile-menu" id="mobileMenu">
       <button class="nav-mobile-close" id="mobileClose">✕</button>
       <a href="#work" class="mobile-link">Work</a>
       <a href="#services" class="mobile-link">Services</a>
+      <a href="#about-me" class="mobile-link">About</a>
       <a href="#process" class="mobile-link">Process</a>
       <a href="#pricing" class="mobile-link">Pricing</a>
       <a href="blog/index.html" class="mobile-link">Blog</a>
@@ -104,6 +82,7 @@
       <ul class="nav-links">
         <li><a href="#work">Work</a></li>
         <li><a href="#services">Services</a></li>
+        <li><a href="#about-me">About</a></li>
         <li><a href="#process">Process</a></li>
         <li><a href="#pricing">Pricing</a></li>
         <li><a href="blog/index.html">Blog</a></li>
@@ -120,13 +99,11 @@
       <div class="hero-bg"></div>
       <div class="hero-line"></div>
       <div class="hero-content">
-        <div class="hero-eyebrow">
-          <span>Web Designer & Developer</span>
-        </div>
+        <div class="hero-eyebrow"><span>Web Designer & Developer</span></div>
         <h1 class="hero-title">
-          Crafting<br />
-          <em>digital</em><br />
-          <span class="outline">presence.</span>
+          Crafting<br /><em>digital</em><br /><span class="outline"
+            >presence.</span
+          >
         </h1>
         <p class="hero-sub">
           I build websites that convert visitors into clients —<br />
@@ -191,9 +168,7 @@
       <div class="about-grid">
         <div class="reveal">
           <h2 class="about-heading">
-            Building the web,<br />
-            <em>one client</em><br />
-            at a time.
+            Building the web,<br /><em>one client</em><br />at a time.
           </h2>
         </div>
         <div class="about-body reveal">
@@ -210,26 +185,25 @@
           </p>
           <p>
             From <strong>hair products & wellness brands</strong> to
-            <strong>educational institutions</strong>,to even automobile
-            industries, I've helped clients across industries establish a
-            digital identity worth owning.
+            <strong>educational institutions</strong>, I've helped clients
+            across industries establish a digital identity worth owning.
           </p>
           <div class="about-stats">
             <div class="stat">
-              <span class="stat-num">3+</span>
-              <span class="stat-label">Projects Delivered</span>
+              <span class="stat-num">3+</span
+              ><span class="stat-label">Projects Delivered</span>
             </div>
             <div class="stat">
-              <span class="stat-num">3</span>
-              <span class="stat-label">Services Offered</span>
+              <span class="stat-num">3</span
+              ><span class="stat-label">Services Offered</span>
             </div>
             <div class="stat">
-              <span class="stat-num">100%</span>
-              <span class="stat-label">Custom Built</span>
+              <span class="stat-num">100%</span
+              ><span class="stat-label">Custom Built</span>
             </div>
             <div class="stat">
-              <span class="stat-num">0</span>
-              <span class="stat-label">Templates Used</span>
+              <span class="stat-num">0</span
+              ><span class="stat-label">Templates Used</span>
             </div>
           </div>
         </div>
@@ -240,8 +214,7 @@
     <section class="services" id="services">
       <div class="section-label reveal"><span>Services</span></div>
       <h2 class="services-heading reveal">
-        What I do<br />
-        <em>exceptionally</em> well.
+        What I do<br /><em>exceptionally</em> well.
       </h2>
       <div class="services-list">
         <div class="service-item reveal">
@@ -282,96 +255,145 @@
         <p class="work-sub reveal">A selection of recent projects.</p>
       </div>
       <div class="projects-grid">
-        <article
-          class="project-card reveal"
-          onclick="window.location = 'case-studies/divine-favour.html'"
-        >
-          <div class="project-card-inner">
-            <div class="project-col-main">
-              <div class="project-tag">Education · Kenya</div>
-              <h3 class="project-title">Divine Favour<br />Junior Academy</h3>
-            </div>
-            <div class="project-col-desc">
-              <p class="project-desc">
-                Full institutional website for a Kenyan primary school. Built to
-                communicate trust to parents — admissions info, class listings,
-                and a visual identity that converts first impressions into
-                enrolments.
-              </p>
-            </div>
-            <div class="project-col-meta">
-              <div class="project-tags-row">
-                <span class="project-tech-tag">HTML/CSS</span>
-                <span class="project-tech-tag">SEO</span>
-                <span class="project-tech-tag">Mobile-first</span>
+        <!-- Divine Favour Junior Academy -->
+        <article class="project-card reveal">
+          <a
+            href="https://divine-favour-junior-academy.web.app/"
+            target="_blank"
+            rel="noopener"
+            class="project-image-link"
+          >
+            <div class="project-image">
+              <img
+                src="images/divine-favour.png"
+                alt="Divine Favour Junior Academy website"
+                loading="lazy"
+              />
+              <div class="project-image-overlay">
+                <span class="view-label">Visit Site ↗</span>
               </div>
+            </div>
+          </a>
+          <div class="project-meta">
+            <div class="project-meta-top">
+              <span class="project-tag">Education · Kenya</span>
+              <span class="project-num">01</span>
+            </div>
+            <h3 class="project-title">Divine Favour<br />Junior Academy</h3>
+            <p class="project-desc">
+              A full school website for a Kenyan primary institution — complete
+              with admissions info, class listings, and a polished institutional
+              identity that builds parent trust at first glance.
+            </p>
+            <div class="project-footer">
+              <a
+                href="case-studies/divine-favour.html"
+                class="project-link case-study-link"
+              >
+                <span>See How It Was Built →</span>
+                <span class="project-link-arrow"></span>
+              </a>
               <a
                 href="https://divine-favour-junior-academy.web.app/"
                 target="_blank"
                 rel="noopener"
-                class="project-live-link"
-                onclick="event.stopPropagation()"
-                >divine-favour-junior-academy.web.app ↗</a
+                class="project-link"
+                style="margin-top: 8px"
               >
-            </div>
-            <div class="project-col-cta">
-              <span class="project-num">01</span>
-              <a
-                href="case-studies/divine-favour.html"
-                class="project-cs-btn"
-                onclick="event.stopPropagation()"
-                >Read Case Study →</a
-              >
+                <span>divine-favour-junior-academy.web.app</span>
+                <span class="project-link-arrow">↗</span>
+              </a>
             </div>
           </div>
         </article>
 
-        <article
-          class="project-card reveal"
-          onclick="window.location = 'case-studies/healthyflourish.html'"
-        >
-          <div class="project-card-inner">
-            <div class="project-col-main">
-              <div class="project-tag">
-                Hair Products & Wellness · E-commerce
+        <!-- HealthyFlourish -->
+        <article class="project-card reveal">
+          <a
+            href="https://healthyflourish.web.app/"
+            target="_blank"
+            rel="noopener"
+            class="project-image-link"
+          >
+            <div class="project-image">
+              <img
+                src="images/healthy-flourish.png"
+                alt="HealthyFlourish website"
+                loading="lazy"
+              />
+              <div class="project-image-overlay">
+                <span class="view-label">Visit Site ↗</span>
               </div>
-              <h3 class="project-title">Healthy<br />Flourish</h3>
             </div>
-            <div class="project-col-desc">
-              <p class="project-desc">
-                Premium brand site for a hair products, mentorship & women
-                empowerment brand. Rich visual identity, strong typographic
-                hierarchy, and a product-forward layout built to convert
-                browsers into buyers.
-              </p>
+          </a>
+          <div class="project-meta">
+            <div class="project-meta-top">
+              <span class="project-tag"
+                >Hair products & Wellness · E-commerce</span
+              >
+              <span class="project-num">02</span>
             </div>
-            <div class="project-col-meta">
-              <div class="project-tags-row">
-                <span class="project-tech-tag">HTML/CSS</span>
-                <span class="project-tech-tag">E-commerce</span>
-                <span class="project-tech-tag">Brand Identity</span>
-              </div>
+            <h3 class="project-title">Healthy<br />Flourish</h3>
+            <p class="project-desc">
+              A premium hair product & women empowerment brand site — moody
+              purple palette, strong typographic hierarchy, and a
+              product-forward layout designed to convert.
+            </p>
+            <div class="project-footer">
+              <a
+                href="case-studies/healthyflourish.html"
+                class="project-link case-study-link"
+              >
+                <span>See How It Was Built →</span>
+                <span class="project-link-arrow"></span>
+              </a>
               <a
                 href="https://healthyflourish.web.app/"
                 target="_blank"
                 rel="noopener"
-                class="project-live-link"
-                onclick="event.stopPropagation()"
-                >healthyflourish.web.app ↗</a
+                class="project-link"
+                style="margin-top: 8px"
               >
-            </div>
-            <div class="project-col-cta">
-              <span class="project-num">02</span>
-              <a
-                href="case-studies/healthyflourish.html"
-                class="project-cs-btn"
-                onclick="event.stopPropagation()"
-                >Read Case Study →</a
-              >
+                <span>healthyflourish.web.app</span>
+                <span class="project-link-arrow">↗</span>
+              </a>
             </div>
           </div>
         </article>
 
+        <!-- Direct Tyres Limited -->
+        <article class="project-card reveal">
+          <div class="project-image project-image-no-link">
+            <img
+              src="images/direct-tyres.png"
+              alt="Direct Tyres Limited website"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-meta">
+            <div class="project-meta-top">
+              <span class="project-tag">Automotive · E-commerce · Kenya</span>
+              <span class="project-num">03</span>
+            </div>
+            <h3 class="project-title">Direct Tyres<br />Limited</h3>
+            <p class="project-desc">
+              A bold e-commerce site for Kenya's trusted tyre, rim & battery
+              supplier — dark high-contrast design, strong brand identity, and a
+              product catalogue built for easy browsing.
+            </p>
+            <div class="project-footer">
+              <a
+                href="case-studies/direct-tyres.html"
+                class="project-link case-study-link"
+              >
+                <span>See How It Was Built →</span>
+                <span class="project-link-arrow"></span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Next project CTA -->
         <article class="project-card project-cta reveal">
           <div class="project-cta-inner">
             <div class="project-cta-icon">+</div>
@@ -382,13 +404,59 @@
       </div>
     </section>
 
+    <!-- ABOUT ME (personal) -->
+    <section class="about-me" id="about-me">
+      <div class="section-label reveal">
+        <span>The Person Behind the Work</span>
+      </div>
+      <div class="about-me-grid">
+        <div class="about-me-photo reveal">
+          <div class="about-me-photo-frame">
+            <img
+              src="images/profile.jpg"
+              alt="JahawiDevs — Web Designer & Developer"
+            />
+            <div class="about-me-photo-accent"></div>
+          </div>
+        </div>
+        <div class="about-me-content reveal">
+          <h2 class="about-me-heading">
+            Why I chose<br /><em>to build</em><br />the web.
+          </h2>
+          <div class="about-me-body">
+            <p>
+              I got into web development because I kept seeing talented
+              businesses — real people with great products and genuine passion —
+              being invisible online. Not because they didn't deserve an
+              audience, but because they didn't have the right digital presence.
+            </p>
+            <p>That gap frustrated me. So I decided to close it.</p>
+            <p>
+              What started as curiosity turned into a craft. I taught myself
+              design and code, worked on projects that challenged me, and slowly
+              built a style that's my own — dark, premium, intentional. Every
+              site I build is the result of genuinely caring about the outcome.
+            </p>
+            <p>
+              I'm based in <strong>Kenya</strong>, building for clients who want
+              their digital presence to mean something. If that's you, I'd love
+              to work together.
+            </p>
+          </div>
+          <a
+            href="#contact"
+            class="btn-primary"
+            style="display: inline-block; margin-top: 36px"
+            >Work With Me</a
+          >
+        </div>
+      </div>
+    </section>
+
     <!-- PROCESS -->
     <section class="process" id="process">
       <div class="section-label reveal"><span>Process</span></div>
-      <h2 class="process-heading reveal">
-        How it<br />
-        <em>works</em>.
-      </h2>
+      <h2 class="process-heading reveal">How it<br /><em>works</em>.</h2>
       <div class="process-steps">
         <div class="process-step reveal">
           <div class="step-num">01</div>
@@ -463,8 +531,8 @@
           <div class="pricing-card-top">
             <span class="pricing-tier">Starter</span>
             <div class="pricing-amount">
-              <span class="pricing-currency">KES</span>
-              <span class="pricing-num">15,000</span>
+              <span class="pricing-currency">KES</span
+              ><span class="pricing-num">15,000</span>
             </div>
           </div>
           <p class="pricing-desc">
@@ -480,14 +548,13 @@
           </ul>
           <a href="#contact" class="pricing-cta">Get Started</a>
         </div>
-
         <div class="pricing-card pricing-card-featured reveal">
           <div class="pricing-badge">Most Popular</div>
           <div class="pricing-card-top">
             <span class="pricing-tier">Standard</span>
             <div class="pricing-amount">
-              <span class="pricing-currency">KES</span>
-              <span class="pricing-num">35,000</span>
+              <span class="pricing-currency">KES</span
+              ><span class="pricing-num">35,000</span>
             </div>
           </div>
           <p class="pricing-desc">
@@ -506,13 +573,12 @@
             >Get Started</a
           >
         </div>
-
         <div class="pricing-card reveal">
           <div class="pricing-card-top">
             <span class="pricing-tier">Premium</span>
             <div class="pricing-amount">
-              <span class="pricing-currency">KES</span>
-              <span class="pricing-num">65,000</span>
+              <span class="pricing-currency">KES</span
+              ><span class="pricing-num">65,000</span>
             </div>
           </div>
           <p class="pricing-desc">
@@ -529,7 +595,6 @@
           </ul>
           <a href="#contact" class="pricing-cta">Get Started</a>
         </div>
-
         <div class="pricing-card pricing-card-custom reveal">
           <div class="pricing-card-top">
             <span class="pricing-tier">Custom</span>
@@ -563,15 +628,14 @@
         <span>Contact</span>
       </div>
       <h2 class="contact-heading reveal">
-        Let's build<br />
-        <em>something</em><br />
-        <span class="outline">great.</span>
+        Let's build<br /><em>something</em><br /><span class="outline"
+          >great.</span
+        >
       </h2>
       <p class="contact-sub reveal">
         Have a project in mind? Tell me about it below.
       </p>
 
-      <!-- ─── CONTACT FORM ─── -->
       <form class="contact-form reveal" id="contactForm" novalidate>
         <div class="form-row">
           <div class="form-group">
@@ -595,19 +659,18 @@
             />
           </div>
         </div>
-
         <div class="form-row">
           <div class="form-group">
-            <label for="projectType">Project Type</label>
-            <select id="projectType" name="projectType" required>
-              <option value="" disabled selected>Select a project type</option>
-              <option value="new-website">New Website</option>
-              <option value="redesign">Website Redesign</option>
-              <option value="ecommerce">E-commerce Store</option>
-              <option value="school">School / Institution Site</option>
-              <option value="brand-identity">Brand Identity</option>
-              <option value="other">Other / Not sure yet</option>
-            </select>
+            <label for="projectType"
+              >Project Type — describe what you need</label
+            >
+            <input
+              type="text"
+              id="projectType"
+              name="projectType"
+              placeholder="e.g. E-commerce store for my clothing brand"
+              required
+            />
           </div>
           <div class="form-group">
             <label for="budget">Budget Range</label>
@@ -621,7 +684,6 @@
             </select>
           </div>
         </div>
-
         <div class="form-row">
           <div class="form-group">
             <label for="timeline">Timeline</label>
@@ -646,7 +708,6 @@
             />
           </div>
         </div>
-
         <div class="form-group form-group-full">
           <label for="message">Tell me about your project</label>
           <textarea
@@ -657,12 +718,10 @@
             required
           ></textarea>
         </div>
-
         <button type="submit" class="form-submit" id="formSubmit">
           <span class="submit-text">Send Message</span>
           <span class="submit-arrow">↗</span>
         </button>
-
         <div class="form-success" id="formSuccess">
           <span class="success-icon">✓</span>
           <p>Message sent — I'll be in touch within 24 hours.</p>
@@ -672,56 +731,36 @@
       <div class="contact-divider reveal">
         <span>or reach me directly</span>
       </div>
-
-      <a href="mailto:vicohawi@gmail.com" class="contact-email reveal"
-        >vicohawi@gmail.com</a
-      >
       <div class="contact-methods reveal">
-        <a href="tel:+254769694897" class="contact-method">
+        <a
+          href="https://wa.me/254769694897"
+          target="_blank"
+          rel="noopener"
+          class="contact-method"
+        >
           <span class="contact-method-label">Phone / WhatsApp</span>
           <span class="contact-method-value">+254 769 694 897</span>
         </a>
-        <a href="mailto:vicohawi@gmail.com" class="contact-method">
+        <a
+          href="https://mail.google.com/mail/?view=cm&to=vicohawi@gmail.com"
+          target="_blank"
+          rel="noopener"
+          class="contact-method"
+        >
           <span class="contact-method-label">Email</span>
           <span class="contact-method-value">vicohawi@gmail.com</span>
         </a>
       </div>
       <div class="contact-links reveal">
-        <a
-          href="https://github.com/arise-ui"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="contact-link"
-        >
-          GitHub
-        </a>
-
-        <a
-          href="https://x.com/JahawiDevs"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="contact-link"
-        >
-          Twitter / X
-        </a>
-
-        <a
-          href="https://www.linkedin.com/in/victor-jahawi-5337a23a9/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="contact-link"
-        >
-          LinkedIn
-        </a>
-
+        <a href="#" class="contact-link">GitHub</a>
+        <a href="#" class="contact-link">Twitter / X</a>
+        <a href="#" class="contact-link">LinkedIn</a>
         <a
           href="https://wa.me/254769694897"
           target="_blank"
-          rel="noopener noreferrer"
           class="contact-link"
+          >WhatsApp</a
         >
-          WhatsApp
-        </a>
       </div>
     </section>
 
@@ -729,7 +768,7 @@
     <footer>
       <a href="#" class="footer-logo">Jahawi<span>Devs</span></a>
       <nav class="footer-nav">
-        <a href="case-studies/divine-favour.html">Case Studies</a>
+        <a href="case-studies/divine-favour.html">Behind the Build</a>
         <a href="blog/index.html">Blog</a>
         <a href="#contact">Contact</a>
       </nav>
