@@ -1,12 +1,21 @@
 {
   "name": "JahawiDevs",
   "short_name": "JahawiDevs",
-  "description": "Premium web design and development for Kenyan businesses.",
+  "description": "Premium custom websites for Kenyan businesses, schools, and brands.",
   "start_url": "/",
-  "display": "standalone",
-  "background_color": "#080808",
+  "display": "browser",
+  "background_color": "#0e0e0e",
   "theme_color": "#c9a84c",
   "icons": [
-    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+    {
+      "src": "/favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
   ]
 }

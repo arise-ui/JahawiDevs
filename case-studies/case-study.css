@@ -412,3 +412,214 @@
       transparent 50%
     );
 }
+
+/* ─── DIRECT TYRES LAYOUT CLASSES (missing from original) ─── */
+.cs-meta-bar {
+  display: flex;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+.cs-meta-bar .cs-meta-item {
+  flex: 1;
+  min-width: 160px;
+  padding: 20px 32px;
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.cs-meta-bar .cs-meta-item:last-child {
+  border-right: none;
+}
+
+.cs-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 80px;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.cs-two-col .cs-heading {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(32px, 3vw, 48px);
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  position: sticky;
+  top: 100px;
+}
+.cs-two-col .cs-heading em {
+  font-style: italic;
+  color: var(--gold);
+}
+.cs-two-col .cs-body p {
+  font-family: "DM Mono", monospace;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--muted);
+  line-height: 1.9;
+  margin-bottom: 24px;
+}
+.cs-two-col .cs-body p strong {
+  color: var(--white);
+  font-weight: 400;
+}
+
+.cs-section-alt {
+  background: var(--deep);
+}
+
+.cs-deliverables {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.cs-deliverable {
+  background: var(--surface);
+  padding: 40px 32px;
+  transition: background 0.3s;
+}
+.cs-deliverable:hover {
+  background: #181818;
+}
+.cs-deliverable-num {
+  font-family: "DM Mono", monospace;
+  font-size: 11px;
+  color: var(--gold-dim);
+  font-weight: 300;
+  display: block;
+  margin-bottom: 16px;
+}
+.cs-deliverable-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+}
+.cs-deliverable-desc {
+  font-family: "DM Mono", monospace;
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+.cs-meta-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 32px;
+}
+.cs-pill {
+  font-family: "DM Mono", monospace;
+  font-size: 11px;
+  font-weight: 300;
+  color: var(--gold);
+  border: 1px solid var(--gold-dim);
+  padding: 6px 14px;
+  letter-spacing: 0.1em;
+}
+
+.cs-hero-image {
+  position: absolute;
+  right: 60px;
+  bottom: 80px;
+  width: 44%;
+  max-width: 600px;
+  z-index: 2;
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+.cs-hero-image img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: top;
+}
+
+.cs-next {
+  border-top: 1px solid var(--border);
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background: var(--deep);
+}
+.cs-next-label {
+  font-family: "DM Mono", monospace;
+  font-size: 11px;
+  color: var(--muted);
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+.cs-next-link {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(22px, 3vw, 36px);
+  font-weight: 300;
+  color: var(--white);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.cs-next-link:hover {
+  color: var(--gold);
+}
+.cs-next-link span {
+  color: var(--gold-dim);
+  transition:
+    transform 0.3s,
+    color 0.3s;
+  display: inline-block;
+}
+.cs-next-link:hover span {
+  transform: translateX(6px);
+  color: var(--gold);
+}
+
+/* Responsive additions for DT layout */
+@media (max-width: 900px) {
+  .cs-two-col {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .cs-two-col .cs-heading {
+    position: static;
+  }
+  .cs-deliverables {
+    grid-template-columns: 1fr 1fr;
+  }
+  .cs-hero-image {
+    display: none;
+  }
+  .cs-meta-bar {
+    flex-direction: column;
+  }
+  .cs-meta-bar .cs-meta-item {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+  .cs-meta-bar .cs-meta-item:last-child {
+    border-bottom: none;
+  }
+  .cs-next {
+    padding: 40px 28px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 600px) {
+  .cs-deliverables {
+    grid-template-columns: 1fr;
+  }
+}

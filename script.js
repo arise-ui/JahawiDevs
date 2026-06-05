@@ -71,26 +71,13 @@ const obs = new IntersectionObserver(
 );
 reveals.forEach((el) => obs.observe(el));
 
-// ─── CONTACT FORM — EmailJS ───────────────────────────────────────────────────
-// SETUP STEPS:
-//   1. Go to https://www.emailjs.com and create a free account
-//   2. Add a service (Gmail) → copy the Service ID
-//   3. Create an email template — use these variables:
-//      {{from_name}}, {{from_email}}, {{project_type}}, {{budget}},
-//      {{timeline}}, {{phone}}, {{message}}
-//   4. Copy your Public Key, Service ID, and Template ID
-//   5. Replace the three placeholders below
-
-const EMAILJS_SERVICE_ID = "YOUR_SERVICE_ID"; // e.g. "service_abc123"
-const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID"; // e.g. "template_xyz789"
-// Public key is set in the <head> via emailjs.init("YOUR_EMAILJS_PUBLIC_KEY")
-
+// ─── CONTACT FORM — mailto fallback (replace with EmailJS when ready) ────────
 const form = document.getElementById("contactForm");
 const formSubmit = document.getElementById("formSubmit");
 const formSuccess = document.getElementById("formSuccess");
 
 if (form) {
-  form.addEventListener("submit", async (e) => {
+  form.addEventListener("submit", (e) => {
     e.preventDefault();
 
     // Validation
@@ -105,35 +92,27 @@ if (form) {
     });
     if (!valid) return;
 
-    // Disable button while sending
-    formSubmit.disabled = true;
-    formSubmit.querySelector(".submit-text").textContent = "Sending…";
+    const name = document.getElementById("name")?.value.trim() || "";
+    const email = document.getElementById("email")?.value.trim() || "";
+    const projectType =
+      document.getElementById("projectType")?.value.trim() || "";
+    const budget = document.getElementById("budget")?.value || "";
+    const timeline = document.getElementById("timeline")?.value || "";
+    const phone = document.getElementById("phone")?.value.trim() || "—";
+    const message = document.getElementById("message")?.value.trim() || "";
 
-    const templateParams = {
-      from_name: document.getElementById("name").value.trim(),
-      from_email: document.getElementById("email").value.trim(),
-      project_type: document.getElementById("projectType").value.trim(),
-      budget: document.getElementById("budget").value,
-      timeline: document.getElementById("timeline")?.value || "—",
-      phone: document.getElementById("phone").value.trim() || "—",
-      message: document.getElementById("message").value.trim(),
-    };
+    const subject = encodeURIComponent(`New Project Enquiry from ${name}`);
+    const body = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\nPhone/WhatsApp: ${phone}\n\nProject Type: ${projectType}\nBudget: ${budget}\nTimeline: ${timeline}\n\nMessage:\n${message}`,
+    );
 
-    try {
-      await emailjs.send(
-        EMAILJS_SERVICE_ID,
-        EMAILJS_TEMPLATE_ID,
-        templateParams,
-      );
-      formSubmit.style.display = "none";
-      formSuccess.classList.add("visible");
-    } catch (err) {
-      console.error("EmailJS error:", err);
-      formSubmit.disabled = false;
-      formSubmit.querySelector(".submit-text").textContent = "Send Message";
-      alert(
-        "Something went wrong. Please try again or email me directly at vicohawi@gmail.com",
-      );
-    }
+    // Open mailto — user's email client sends the message
+    window.location.href = `mailto:vicohawi@gmail.com?subject=${subject}&body=${body}`;
+
+    // Show success state after a short delay
+    setTimeout(() => {
+      if (formSubmit) formSubmit.style.display = "none";
+      if (formSuccess) formSuccess.classList.add("visible");
+    }, 400);
   });
 }

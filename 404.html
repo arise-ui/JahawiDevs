@@ -1,33 +1,180 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Page Not Found</title>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px 16px; border-radius: 3px; }
-      #message h3 { color: #888; font-weight: normal; font-size: 16px; margin: 16px 0 12px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Not Found — JahawiDevs</title>
+    <meta
+      name="description"
+      content="The page you're looking for doesn't exist."
+    />
+    <meta name="robots" content="noindex, follow" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <meta name="theme-color" content="#c9a84c" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <style>
+      .not-found {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 60px 28px;
+        position: relative;
+        overflow: hidden;
+        background: var(--deep);
+      }
+      .not-found-bg {
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          ellipse 50% 60% at 50% 50%,
+          rgba(201, 168, 76, 0.05) 0%,
+          transparent 70%
+        );
+        pointer-events: none;
+      }
+      .not-found-code {
+        font-family: "Cormorant Garamond", serif;
+        font-size: clamp(120px, 20vw, 240px);
+        font-weight: 300;
+        line-height: 0.85;
+        letter-spacing: -0.04em;
+        color: transparent;
+        -webkit-text-stroke: 1px rgba(201, 168, 76, 0.2);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        user-select: none;
+        z-index: 0;
+      }
+      .not-found-content {
+        position: relative;
+        z-index: 2;
+        max-width: 480px;
+      }
+      .not-found-eyebrow {
+        font-family: "DM Mono", monospace;
+        font-size: 11px;
+        color: var(--gold);
+        font-weight: 300;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+      }
+      .not-found-heading {
+        font-family: "Cormorant Garamond", serif;
+        font-size: clamp(40px, 6vw, 72px);
+        font-weight: 300;
+        line-height: 1;
+        letter-spacing: -0.02em;
+        margin-bottom: 20px;
+      }
+      .not-found-heading em {
+        font-style: italic;
+        color: var(--gold);
+      }
+      .not-found-sub {
+        font-family: "DM Mono", monospace;
+        font-size: 13px;
+        color: var(--muted);
+        font-weight: 300;
+        line-height: 1.8;
+        margin-bottom: 48px;
+        letter-spacing: 0.03em;
+      }
+      .not-found-actions {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .not-found-links {
+        display: flex;
+        gap: 32px;
+        justify-content: center;
+        margin-top: 48px;
+        flex-wrap: wrap;
+      }
+      .not-found-link {
+        font-family: "DM Mono", monospace;
+        font-size: 11px;
+        color: var(--muted);
+        text-decoration: none;
+        font-weight: 300;
+        letter-spacing: 0.1em;
+        transition: color 0.3s;
+        border-bottom: 1px solid transparent;
+        padding-bottom: 2px;
+      }
+      .not-found-link:hover {
+        color: var(--gold);
+        border-bottom-color: var(--gold-dim);
       }
     </style>
   </head>
   <body>
-    <div id="message">
-      <h2>404</h2>
-      <h1>Page Not Found</h1>
-      <p>The specified file was not found on this website. Please check the URL for mistakes and try again.</p>
-      <h3>Why am I seeing this?</h3>
-      <p>This page was generated by the Firebase Command-Line Interface. To modify it, edit the <code>404.html</code> file in your project's configured <code>public</code> directory.</p>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <nav id="nav" class="scrolled">
+      <a href="/" class="nav-logo">Jahawi<span>Devs</span></a>
+      <ul class="nav-links">
+        <li><a href="/#work">Work</a></li>
+        <li><a href="/#services">Services</a></li>
+        <li><a href="/#pricing">Pricing</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/#contact">Contact</a></li>
+      </ul>
+      <a href="/#contact" class="nav-cta">Hire Me</a>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <div class="nav-mobile-menu" id="mobileMenu">
+      <button class="nav-mobile-close" id="mobileClose">✕</button>
+      <a href="/#work" class="mobile-link">Work</a>
+      <a href="/#services" class="mobile-link">Services</a>
+      <a href="/#pricing" class="mobile-link">Pricing</a>
+      <a href="/blog/" class="mobile-link">Blog</a>
+      <a href="/#contact" class="mobile-link">Contact</a>
     </div>
+
+    <main class="not-found">
+      <div class="not-found-bg"></div>
+      <span class="not-found-code" aria-hidden="true">404</span>
+      <div class="not-found-content">
+        <p class="not-found-eyebrow">Error 404</p>
+        <h1 class="not-found-heading">Nothing<br /><em>here</em>.</h1>
+        <p class="not-found-sub">
+          This page doesn't exist — or it moved.<br />
+          Let's get you back somewhere useful.
+        </p>
+        <div class="not-found-actions">
+          <a href="/" class="btn-primary">Back to Home</a>
+          <a href="/#contact" class="btn-ghost">Start a Project</a>
+        </div>
+        <div class="not-found-links">
+          <a href="/#work" class="not-found-link">View Work</a>
+          <a href="/blog/" class="not-found-link">Read Blog</a>
+          <a href="/case-studies/divine-favour.html" class="not-found-link"
+            >Behind the Build</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <script src="/script.js"></script>
   </body>
 </html>
